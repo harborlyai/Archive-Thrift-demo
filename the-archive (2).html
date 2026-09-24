@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>THE ARCHIVE — Drop 01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: { paper: '#FFFFFF', obsidian: '#0A0A0A' },
+        fontFamily: {
+          serif: ['"Instrument Serif"', 'serif'],
+          sans: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  :root {
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  body {
+    background: #FFFFFF;
+    color: #0A0A0A;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.01em;
+  }
+  .tracking-wider-plus { letter-spacing: 0.18em; }
+  .hairline { border-color: #E5E5E5; }
+  .fashion-crop {
+    background-image: url('https://images.unsplash.com/photo-1520975954732-35dd22299614?q=80&w=1200&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center 20%;
+  }
+  .product-shot { background-size: cover; background-position: center; }
+  .p1 { background-image: url('https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=900&auto=format&fit=crop'); }
+  .p2 { background-image: url('https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=900&auto=format&fit=crop'); }
+  .p3 { background-image: url('https://images.unsplash.com/photo-1517438476312-10d79c077509?q=80&w=900&auto=format&fit=crop'); }
+  .p4 { background-image: url('https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=900&auto=format&fit=crop'); }
+  .p5 { background-image: url('https://images.unsplash.com/photo-1576995853123-5a10305d93c0?q=80&w=900&auto=format&fit=crop'); }
+  .p6 { background-image: url('https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=900&auto=format&fit=crop'); }
+  .btn-purchase { transition: background-color 160ms ease, color 160ms ease; }
+  .btn-purchase:hover { background-color: #0A0A0A; color: #FFFFFF; }
+  .btn-purchase:focus-visible { outline: 2px solid #0A0A0A; outline-offset: 2px; }
+  .capsule-link { transition: background-color 160ms ease, color 160ms ease; }
+  .capsule-link:hover { background-color: #0A0A0A; color: #FFFFFF; }
+  .contact-link { transition: opacity 160ms ease; }
+  .contact-link:hover { opacity: 0.55; }
+  .hero-wrap { position: relative; overflow: hidden; }
+  .hero-watermark {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .hero-watermark span {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 34vw;
+    line-height: 1;
+    color: #0A0A0A;
+    opacity: 0.035;
+    white-space: nowrap;
+    user-select: none;
+  }
+  .hero-content { position: relative; z-index: 1; }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body class="antialiased">
+
+  <header class="w-full border-b hairline">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 py-6">
+      <div class="text-lg md:text-xl font-medium tracking-wider-plus uppercase">The Archive</div>
+      <a href="#inventory" class="capsule-link text-xs tracking-wider-plus uppercase border hairline rounded-full px-5 py-2">View Drops</a>
+    </div>
+  </header>
+
+  <section class="hero-wrap">
+    <div class="hero-watermark"><span>Archive</span></div>
+    <div class="hero-content max-w-7xl mx-auto px-6 md:px-10 pt-16 md:pt-24 pb-16 md:pb-24">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-end">
+      <div class="md:col-span-7 md:col-start-1">
+        <p class="text-sm tracking-wider-plus uppercase text-neutral-500 mb-6">Drop 01</p>
+        <h1 class="font-serif italic text-[13vw] md:text-6xl lg:text-7xl leading-[0.98] mb-8">
+          Selected heavyweight workwear
+        </h1>
+        <p class="text-base md:text-lg text-neutral-600 max-w-md leading-relaxed">
+          Curated vintage wash, sourced piece by piece and passed through one hand before yours.
+        </p>
+      </div>
+      <div class="md:col-span-4 md:col-start-9">
+        <div class="fashion-crop w-full aspect-[3/4] border hairline"></div>
+        <p class="text-xs text-neutral-500 mt-3">Field jacket, deadstock wash — reference shot</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="inventory" class="border-t hairline">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-24">
+      <h2 class="font-serif italic text-3xl md:text-4xl mb-14">Available now</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-14">
+
+        <article class="border-t hairline pt-8">
+          <div class="product-shot p1 w-full aspect-[4/5] border hairline mb-6"></div>
+          <div class="flex items-baseline justify-between mb-3">
+            <h3 class="text-base md:text-lg font-medium">1994 Carhartt Detroit Jacket</h3>
+            <span class="text-base md:text-lg">₹2,499</span>
+          </div>
+          <p class="text-sm text-neutral-500 mb-8">Size: Boxy L &nbsp;/&nbsp; Condition: 9 out of 10</p>
+          <button class="btn-purchase whatsapp-buy w-full border hairline text-sm tracking-wider-plus uppercase py-4"
+            data-item="1994 Carhartt Detroit Jacket">Buy Now</button>
+        </article>
+
+        <article class="border-t hairline pt-8">
+          <div class="product-shot p2 w-full aspect-[4/5] border hairline mb-6"></div>
+          <div class="flex items-baseline justify-between mb-3">
+            <h3 class="text-base md:text-lg font-medium">Faded Onyx Heavyweight Hoodie</h3>
+            <span class="text-base md:text-lg">₹1,899</span>
+          </div>
+          <p class="text-sm text-neutral-500 mb-8">Size: Cropped M &nbsp;/&nbsp; 450 GSM</p>
+          <button class="btn-purchase whatsapp-buy w-full border hairline text-sm tracking-wider-plus uppercase py-4"
+            data-item="Faded Onyx Heavyweight Hoodie">Buy Now</button>
+        </article>
+
+        <article class="border-t hairline pt-8">
+          <div class="product-shot p3 w-full aspect-[4/5] border hairline mb-6"></div>
+          <div class="flex items-baseline justify-between mb-3">
+            <h3 class="text-base md:text-lg font-medium">Distressed Levi's Trucker Jacket</h3>
+            <span class="text-base md:text-lg">₹2,199</span>
+          </div>
+          <p class="text-sm text-neutral-500 mb-8">Size: Regular M &nbsp;/&nbsp; Condition: 8 out of 10</p>
+          <button class="btn-purchase whatsapp-buy w-full border hairline text-sm tracking-wider-plus uppercase py-4"
+            data-item="Distressed Levi's Trucker Jacket">Buy Now</button>
+        </article>
+
+        <article class="border-t hairline pt-8">
+          <div class="product-shot p4 w-full aspect-[4/5] border hairline mb-6"></div>
+          <div class="flex items-baseline justify-between mb-3">
+            <h3 class="text-base md:text-lg font-medium">Olive Field Chore Coat</h3>
+            <span class="text-base md:text-lg">₹2,799</span>
+          </div>
+          <p class="text-sm text-neutral-500 mb-8">Size: Oversized L &nbsp;/&nbsp; Condition: 9 out of 10</p>
+          <button class="btn-purchase whatsapp-buy w-full border hairline text-sm tracking-wider-plus uppercase py-4"
+            data-item="Olive Field Chore Coat">Buy Now</button>
+        </article>
+
+        <article class="border-t hairline pt-8">
+          <div class="product-shot p5 w-full aspect-[4/5] border hairline mb-6"></div>
+          <div class="flex items-baseline justify-between mb-3">
+            <h3 class="text-base md:text-lg font-medium">Washed Grey Crewneck</h3>
+            <span class="text-base md:text-lg">₹1,299</span>
+          </div>
+          <p class="text-sm text-neutral-500 mb-8">Size: Boxy L &nbsp;/&nbsp; 400 GSM</p>
+          <button class="btn-purchase whatsapp-buy w-full border hairline text-sm tracking-wider-plus uppercase py-4"
+            data-item="Washed Grey Crewneck">Buy Now</button>
+        </article>
+
+        <article class="border-t hairline pt-8">
+          <div class="product-shot p6 w-full aspect-[4/5] border hairline mb-6"></div>
+          <div class="flex items-baseline justify-between mb-3">
+            <h3 class="text-base md:text-lg font-medium">Vintage Wrangler Denim Shirt</h3>
+            <span class="text-base md:text-lg">₹1,599</span>
+          </div>
+          <p class="text-sm text-neutral-500 mb-8">Size: Regular L &nbsp;/&nbsp; Condition: 8 out of 10</p>
+          <button class="btn-purchase whatsapp-buy w-full border hairline text-sm tracking-wider-plus uppercase py-4"
+            data-item="Vintage Wrangler Denim Shirt">Buy Now</button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="border-t hairline">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-24">
+      <h2 class="font-serif italic text-2xl md:text-3xl mb-14">From the archive's regulars</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+
+        <div class="border-t hairline pt-6">
+          <p class="text-base leading-relaxed mb-6">The Carhartt jacket arrived exactly as photographed — better, even. Wash and wear were spot on for a '94.</p>
+          <p class="text-xs tracking-wider-plus uppercase text-neutral-500">Rhea M. — Bengaluru</p>
+        </div>
+
+        <div class="border-t hairline pt-6">
+          <p class="text-base leading-relaxed mb-6">Fast reply on WhatsApp, honest photos, and the hoodie fit true to the size notes. Already watching for the next drop.</p>
+          <p class="text-xs tracking-wider-plus uppercase text-neutral-500">Aarav S. — Delhi</p>
+        </div>
+
+        <div class="border-t hairline pt-6">
+          <p class="text-base leading-relaxed mb-6">Condition grading here is more honest than most thrift pages I've bought from. The chore coat is a keeper.</p>
+          <p class="text-xs tracking-wider-plus uppercase text-neutral-500">Naina K. — Mumbai</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="border-t hairline">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-20">
+      <h2 class="font-serif italic text-2xl md:text-3xl mb-8">Reach the archive</h2>
+      <div class="flex flex-wrap gap-x-10 gap-y-4 text-sm">
+        <a href="https://instagram.com/thearchive" target="_blank" rel="noopener" class="contact-link border-b hairline pb-1">Instagram — @thearchive</a>
+        <a href="https://wa.me/10000000000" target="_blank" rel="noopener" class="contact-link border-b hairline pb-1">WhatsApp — +1 000 000 0000</a>
+        <a href="mailto:hello@thearchive.com" class="contact-link border-b hairline pb-1">Email — hello@thearchive.com</a>
+        <span class="text-neutral-500 border-b border-transparent pb-1">Based in Mumbai, India</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t hairline">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-neutral-500 tracking-wide">
+      <span>01 Static Edition Portal</span>
+      <span>Handcrafted by Harborly Agency</span>
+    </div>
+  </footer>
+
+  <script>
+    const WHATSAPP_NUMBER = "10000000000"; // replace with store's number, digits only, country code first
+
+    document.querySelectorAll('.whatsapp-buy').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const itemName = btn.getAttribute('data-item');
+        const message = itemName + ". Is it available?";
+        const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+        window.open(url, '_blank');
+      });
+    });
+  </script>
+
+</body>
+</html>
